@@ -1,4 +1,174 @@
 <!DOCTYPE html>
-<html lang="EN-CA">
-  
+<html lang="en-CA">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Work - Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --bg-cream: #ebd5bb;
+    --primary-brown: #a1836c;
+    --accent-pink: #d79b8e;
+}
+
+/* --- GLOBAL --- */
+body {
+    margin: 0;
+    background-color: var(--bg-cream);
+    font-family: 'Fredoka', sans-serif;
+      max-width: 1200px;
+
+}
+
+/* HEADER */
+header {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: var(--primary-brown);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+}
+
+header img {
+    height: 80px;
+}
+
+/* NAV */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: var(--accent-pink);
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+/* PORTFOLIO */
+.portfolio-section {
+    padding: 60px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.project-row {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.project-row.reverse {
+    flex-direction: row-reverse;
+}
+
+/* IMAGE FRAME (NO PADDING ISSUE) */
+.image-container {
+    flex: 1;
+    background-color: var(--primary-brown);
+}
+
+.image-container img {
+    width: 100%;
+    display: block;
+    border: 25px solid var(--primary-brown); /* clean frame */
+    box-sizing: border-box;
+}
+
+/* TEXT */
+.text-container {
+    flex: 1;
+    text-align: center;
+}
+
+.text-container h2 {
+    font-size: 70px;
+    margin: 0 0 15px;
+}
+
+.text-container p {
+    font-size: 28px;
+    margin: 0;
+}
+
+/* COLORS */
+.color-brown { color: var(--primary-brown); }
+.color-pink { color: var(--accent-pink); }
+
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <!-- HEADER -->
+    <header>
+        <img src="Logo.png" alt="Logo">
+
+        <nav>
+            <ul>
+                <li><a href="#">Travel</a></li>
+                <li><a href="#">Watch</a></li>
+                <li><a href="#">My Work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTENT -->
+    <main class="portfolio-section">
+
+        <div class="project-row">
+            <div class="image-container">
+                <img src="https://placehold.co/300x400/d79b8e/ffffff?text=Magazine+Cover">
+            </div>
+            <div class="text-container color-brown">
+                <h2>Magazine</h2>
+                <p>
+                    A visually driven magazine inspired by the colors, textures, 
+                    and everyday charm of an Asian grocery store.
+                </p>
+            </div>
+        </div>
+
+        <div class="project-row reverse">
+            <div class="image-container">
+                <img src="https://placehold.co/400x250/a1836c/ffffff?text=Silent+Video+Still">
+            </div>
+            <div class="text-container color-pink">
+                <h2>Silent Video</h2>
+                <p>
+                    A film capturing the atmosphere of a favorite university coffee spot.
+                </p>
+            </div>
+        </div>
+
+        <div class="project-row">
+            <div class="image-container">
+                <img src="https://placehold.co/250x350/8eb1b2/ffffff?text=Matchaholic">
+            </div>
+            <div class="text-container color-brown">
+                <h2>Audio<br>Documentary</h2>
+                <p>
+                    An immersive audio documentary exploring the culture, 
+                    preparation, and experience of matcha.
+                </p>
+            </div>
+        </div>
+
+    </main>
+
+</div>
+
+</body>
 </html>
