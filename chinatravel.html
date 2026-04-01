@@ -1,231 +1,235 @@
 <!DOCTYPE html>
 <html lang="en-CA">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Work - Portfolio</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Work - Portfolio</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<style>
+    <style>
+      /* --- GLOBAL --- */
+      body {
+        margin: 0;
+        background-color: #ebd5bb;
+        font-family: 'Fredoka', sans-serif;
+        width: 100%;
 
-/* --- GLOBAL --- */
-body {
-    margin: 0;
-    background-color: #ebd5bb;
-    font-family: 'Fredoka', sans-serif;
-    width: 100%;
+      }
 
-}
+      /* HEADER */
+      header {
+        width: 1400px;
+        margin: 0 auto;
+        background-color: #a1836c;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 80px;
+      }
 
-/* HEADER */
-header {
-    width: 1400px;
-    margin: 0 auto;
-    background-color: #a1836c;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 80px;
-}
+      header img {
+        height: 80px;
+      }
 
-header img {
-    height: 80px;
-}
+      /* NAV */
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 50px;
+        margin: 0;
+        padding: 0;
+      }
 
-/* NAV */
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 50px;
-    margin: 0;
-    padding: 0;
-}
+      nav a {
+        color: #d79b8e;
+        text-decoration: none;
+        font-size: 40px;
+        font-weight: 600;
+      }
 
-nav a {
-    color: #d79b8e;
-    text-decoration: none;
-    font-size: 40px;
-    font-weight: 600;
-}
-  nav li a:hover {
+      nav li a:hover {
         text-decoration: underline;
       }
 
 
-        /* China function... i think */
-        .hero-slider {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 60px 20px;
-            background-color: #ebd5bb;
-            position: relative;
-        }
+      /* China function... i think */
+      .hero-slider {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 60px 20px;
+        background-color: #ebd5bb;
+        position: relative;
+      }
 
-        .main-frame {
-            border: 15px solid #a1836c;
-            position: relative;
-             
-        }
+      .main-frame {
+        border: 15px solid #a1836c;
+        position: relative;
+        max-width: 1000px;
+        width: 100%;
+      }
 
-        .main-frame img {
-            display: block;
-          width: 800px;
-          height: 30px;
-            margin: 0 auto;
-        }
+      .main-frame img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        display: block;
+      }
 
-        .hero-text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: #ebd5bb;
-            font-size: 100px;
-            font-weight: 700;
-            margin: 0;
-            letter-spacing: 5px;
-        }
+      .hero-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #ebd5bb;
+        font-size: 100px;
+        font-weight: 700;
+        margin: 0;
+        letter-spacing: 5px;
+      }
 
-        .arrow {
-            width: 0; 
-            height: 0; 
-            border-top: 30px solid transparent;
-            border-bottom: 30px solid transparent;
-            cursor: pointer;
-            margin: 0 40px;
-        }
+      .arrow {
+        width: 0;
+        height: 0;
+        border-top: 30px solid transparent;
+        border-bottom: 30px solid transparent;
+        cursor: pointer;
+        margin: 0 40px;
+      }
 
-        .arrow-left { border-right: 40px solid #99b4ae; }
-        .arrow-right { border-left: 40px solid #99b4ae; }
-        .arrow-down {
-            width: 0; height: 0; 
-            border-left: 30px solid transparent;
-            border-right: 30px solid transparent;
-            border-top: 40px solid #99b4ae;
-            margin: 0 auto;
-        }
+      .arrow-left {
+        border-right: 40px solid #99b4ae;
+      }
 
-        /* TRAVEL CONTENT GRID */
-        .travel-container {
-            background-color: #a1836c; /* Brown bottom section */
-            padding: 50px 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 30px;
-        }
+      .arrow-right {
+        border-left: 40px solid #99b4ae;
+      }
 
-        .card {
-            background-color: #99b4ae; /* Teal background for text boxes */
-            display: flex;
-            border: 8px solid #d79b8e; /* Pink border */
-            max-width: 800px;
-            width: 100%;
-        }
+      .arrow-down {
+        width: 0;
+        height: 100;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-top: 40px solid #99b4ae;
+        margin: 0 auto;
+      }
 
-        .card img {
-            width: 50%;
-            object-fit: cover;
-        }
+      /* TRAVEL CONTENT GRID */
+      .travel-container {
+        background-color: #a1836c;
+        /* Brown bottom section */
+        padding: 50px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+      }
 
-        .card-text {
-            width: 50%;
-            padding: 20px;
-            color: #ebd5bb;
-            font-size: 24px;
-            font-weight: 600;
-            line-height: 1.2;
-            display: flex;
-            align-items: center;
-            text-align: left;
-        }
+      .card {
+    background-color: #99b4ae;
+    display: flex;
+        flex: 1;
+    border: 10px solid #d79b8e;
+    width: 85%;
+}
 
-        /* SMALL CARDS ROW */
-        .small-cards-row {
-            display: flex;
-            gap: 30px;
-            max-width: 800px;
-            width: 100%;
-        }
+.card img {
+   width: 45%;
+        object-fit: cover;
+}
+      .card-text {
+        width: 50%;
+        padding: 20px;
+        color: #ebd5bb;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 1.2;
+        display: flex;
+        align-items: center;
+        text-align: left;
+      }
 
-        .small-card {
-            flex: 1;
-            background-color: #99b4ae;
-            border: 8px solid #d79b8e;
-            display: flex;
-        }
+      /* SMALL CARDS ROW */
+      .small-cards-row {
+        display: flex;
+        gap: 70px;
+        max-width: 1400px;
+        width: 100%;
+      }
 
-        .small-card img {
-            width: 45%;
-            object-fit: cover;
-        }
+      .small-card {
+        flex: 1;
+        background-color: #99b4ae;
+        border: 8px solid #d79b8e;
+        display: flex;
+      }
 
-        .small-card .card-text {
-            width: 55%;
-            font-size: 16px;
-            padding: 10px;
-        }
+      .small-card img {
+        width: 45%;
+        object-fit: cover;
+      }
 
+      .small-card .card-text {
+        width: 55%;
+        font-size: 16px;
+        padding: 10px;
+      }
     </style>
-</head>
-  
-<body>
-     <!-- HEADER -->
-    <header>
-        <img src="Button.png" alt="Logo" style="width:120px; height:120px">
+  </head>
 
-        <nav>
-            <ul>
-                <li><a href="chinatravel.html">Travel</a></li>
-                <li><a href="watch.html">Watch</a></li>
-                <li><a href="mywork.html">My Work</a></li>
-            </ul>
-        </nav>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <img src="Button.png" alt="Logo" style="width:120px; height:120px">
+
+      <nav>
+        <ul>
+          <li><a href="chinatravel.html">Travel</a></li>
+          <li><a href="watch.html">Watch</a></li>
+          <li><a href="mywork.html">My Work</a></li>
+        </ul>
+      </nav>
     </header>
 
 
     <section class="hero-slider">
-        <div class="arrow arrow-left"></div>
-        <div class="main-frame">
-            <img src="chinaM1775065514.png" alt="Great Wall of China"style="width:1000; height:700">
-            <h1 class="hero-text">CHINA</h1>
-        </div>
-        <div class="arrow arrow-right"></div>
+      <div class="arrow arrow-left"></div>
+      <div class="main-frame">
+        <img src="chinaM1775065514.png" alt="Great Wall of China">
+        <h1 class="hero-text">CHINA</h1>
+      </div>
+      <div class="arrow arrow-right"></div>
     </section>
-    
+
     <div class="arrow-down"></div>
 
     <main class="travel-container">
-        
-        <div class="card">
-            <img src="greatWall1775065510.png" alt="Walking the Great Wall">
-            <div class="card-text">
-                I studied at BNY for 2 weeks. One of the first things we did was walk the Great Wall of China. My legs were killing me.
-            </div>
+
+      <div class="card">
+        <img src="greatWall1775065510.png" alt="Walking the Great Wall" style="width:500px; height:520px">
+        <div class="card-text">
+          I studies at BNY for 2 weeks. One of the first things we did was walk the Great Wall of china. My legs were killing me.
+        </div>
+      </div>
+
+      <div class="small-cards-row">
+        <div class="small-card">
+          <img src="me_pretty1775065545.png" alt="Ming Dynasty Hanfu">
+          <div class="card-text">
+            I dressed in a Ming Dynasty hanfu. The owners of the shop were so nice, they made me feel beautiful.
+          </div>
         </div>
 
-        <div class="small-cards-row">
-            <div class="small-card">
-                <img src="me_pretty1775065545.png" alt="Ming Dynasty Hanfu">
-                <div class="card-text">
-                    I dressed in a Ming Dynasty hanfu. The owners of the shop were so nice, they made me feel beautiful.
-                </div>
-            </div>
-
-            <div class="small-card">
-                <img src="heavenT1775065546.png" alt="Temple of Heaven">
-                <div class="card-text">
-                    The University took us to a lot of temples. This is the Temple of Heaven. I loved every place we went.
-                </div>
-            </div>
+        <div class="small-card">
+          <img src="heavenT1775065546.png" alt="Temple of Heaven">
+          <div class="card-text">
+            The University took us to a lot of temples. This is the Temple of Heaven. I loved every place we went.
+          </div>
         </div>
+      </div>
 
     </main>
 
-</body>
+  </body>
 </html>
-
-
-
