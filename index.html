@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en-CA">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Work - Portfolio</title>
+<title>My Work - Blog</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
 
@@ -16,7 +15,6 @@ body {
     background-color: #ebd5bb;
     font-family: 'Fredoka', sans-serif;
     width: 100%;
-
 }
 
 /* HEADER */
@@ -49,75 +47,96 @@ nav a {
     font-size: 40px;
     font-weight: 600;
 }
-  nav li a:hover {
-        text-decoration: underline;
-      }
- 
-/* LIFE OF AN UNDERGRAD SECTION */
-.hero-container {
+
+nav li a:hover {
+    text-decoration: underline;
+}
+
+/* MAIN SECTION */
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 80vh; /* Takes up most of the screen height */
     padding: 40px;
-    gap: 80px; /* Space between text and image */
-    max-width: 1400px;
+    gap: 80px;
+    width: 1400px;
     margin: 0 auto;
 }
 
-.title-text {
-    color: #a1836c; /* Brown color from screenshot */
-    font-size: 110px; /* Large scale for "Life of an Undergrad" */
-    font-weight: 700;
-    line-height: 1;
-    margin: 0;
-    max-width: 600px;
-}
-
-.image-frame {
-    background-color: #d9d9d9; /* Gray box placeholder color */
-    width: 500px;
-    height: 550px;
-    display: flex;
-    justify-content: center;
+/* TEXT BLOCK */
+.text-block {
+    display: fixed;
+    flex-direction: column;
     align-items: center;
-    overflow: hidden;
+    width: 600px;
 }
 
-.image-frame img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures IMG_6173.png fills the box perfectly */
+.title-text {
+    color: #a1836c;
+    font-size: 140px;
+    font-weight: 700;
+    line-height: 0.9;
+    margin: 0;
+    text-align: center;
+}
+
+.sub-text {
+    color: #d79b8e;
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  text-align: center;
+}
+
+/* IMAGE */
+.me-picture img {
+    width: 620px;
+    height: 620px;
+    object-fit: cover;
 }
 
 </style>
 </head>
 
 <body>
-    <header>
-        <a href="index.html">
-            <img src="Button.png" alt="Home button" style="width:120px; height:120px">
-        </a>
-        <nav>
-            <ul>
-                <li><a href="chinatravel.html">Travel</a></li>
-                <li><a href="watch.html">Watch</a></li>
-                <li><a href="mywork.html">My Work</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main class="hero-container">
-        
+<header>
+    <a href="index.html">
+        <img src="Button.png" alt="Home button" style="width:120px; height:120px">
+    </a>
+
+    <nav>
+        <ul>
+            <li><a href="chinatravel.html">Travel</a></li>
+            <li><a href="watch.html">Watch</a></li>
+            <li><a href="mywork.html">My Work</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="container">
+    
+    <div class="sub-block">
+        <h2 class="sub-text">
+            Hi! I'm Caelyn and this is
+        </h2>
+
         <h1 class="title-text">
             Life of an<br>Undergrad
         </h1>
 
-        <div class="image-frame">
-            <img src="IMG_6173.png" alt="Life of an Undergrad image">
-        </div>
+        <h3 class="sub-text">
+           <br> a student run blog
+        </h3>
+    </div>
 
-    </main>
+    <div class="me-picture">
+        <img src="IMG_6173.png" alt="Picture of back girl with cury black hair and blonde bangs">
+    </div>
+
+</main>
 
 </body>
 </html>
