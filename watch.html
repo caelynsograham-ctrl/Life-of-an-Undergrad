@@ -12,31 +12,24 @@
 /* --- GLOBAL --- */
 body {
     margin: 0;
-    background-color: #ebd5bb; /* Tan background */
+    background-color: #ebd5bb;
     font-family: 'Fredoka', sans-serif;
     width: 100%;
+
 }
 
 /* HEADER */
 header {
-    background-color: #a1836c; /* Brown header */
+    width: 1400px;
+    margin: 0 auto;
+    background-color: #a1836c;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 80px;
 }
 
-.logo-container {
-    background-color: #c4d3cf; /* Duck logo circle background */
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo-container img {
+header img {
     height: 80px;
 }
 
@@ -50,11 +43,34 @@ nav ul {
 }
 
 nav a {
-    color: #ebd5bb; /* Light text for header links */
-    text-decoration: underline; /* Matches the screenshot's underline style */
+    color: #d79b8e;
+    text-decoration: none;
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 600;
 }
+    nav li a:hover {
+        text-decoration: underline;
+      }
+
+ 
+/* PORTFOLIO */
+.portfolio-section {
+    padding: 60px 80px;
+    gap: 100px;
+   width: 1000px;
+   margin: 0 auto;
+}
+
+.project-row {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.project-row.reverse {
+    flex-direction: row-reverse;
+}
+
 
 /* WATCH GRID SECTION */
 .watch-section {
@@ -108,16 +124,16 @@ nav a {
 
 <body>
 
+   <body>
+    <!-- HEADER -->
     <header>
-        <div class="logo-container">
-            <img src="Button.png" alt="Logo">
-        </div>
+        <img src="Button.png" alt="Logo" style="width:120px; height:120px">
 
         <nav>
             <ul>
-                <li><a href="#">Travel</a></li>
-                <li><a href="#">Watch</a></li>
-                <li><a href="#">My Work</a></li>
+               <li><a href="chinatravel.html">Travel</a></li>
+                <li><a href="watch.html">Watch</a></li>
+                <li><a href="mywork.html">My Work</a></li>
             </ul>
         </nav>
     </header>
@@ -126,27 +142,27 @@ nav a {
         <div class="poster-grid">
             
             <div class="poster-frame">
-                <img src="psych-poster.jpg" alt="Psych">
+                <img src="psych1775143252.png" alt="Psych">
             </div>
 
             <div class="poster-frame">
-                <img src="apothecary-diaries.jpg" alt="The Apothecary Diaries">
+                <img src="apothecary diaries1775143249.png" alt="The Apothecary Diaries">
             </div>
 
             <div class="poster-frame">
-                <img src="sweet-tooth.jpg" alt="Sweet Tooth">
+                <img src="sweet tooth1775143254.png" alt="Sweet Tooth">
             </div>
 
             <div class="poster-frame">
-                <img src="saiki-k.jpg" alt="The Disastrous Life of Saiki K">
+                <img src="saikiK.1775143252.png" alt="The Disastrous Life of Saiki K">
             </div>
 
             <div class="poster-frame">
-                <img src="evil.jpg" alt="Evil">
+                <img src="evil1775143251.png" alt="Evil">
             </div>
 
             <div class="poster-frame">
-                <img src="frieren.jpg" alt="Frieren: Beyond Journey's End">
+                <img src="frieren1775143252.png" alt="Frieren: Beyond Journey's End">
             </div>
 
         </div>
@@ -154,3 +170,4 @@ nav a {
 
 </body>
 </html>
+
