@@ -1,1 +1,175 @@
 
+<!-- im a testing -->
+
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Work - Blog</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* --- GLOBAL --- */
+body {
+    margin: 0;
+    background-color: #ebd5bb;
+    font-family: 'Fredoka', sans-serif;
+    width: 100%;
+
+}
+
+/* HEADER */
+header {
+    width: 1400px;
+    margin: 0 auto;
+    background-color: #a1836c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+}
+
+header img {
+    height: 80px;
+}
+
+/* NAV */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #d79b8e;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 600;
+}
+  nav li a:hover {
+        text-decoration: underline;
+      }
+ 
+/* PORTFOLIO */
+.portfolio-section {
+    padding: 60px 80px;
+    gap: 100px;
+   width: 1000px;
+   margin: 0 auto;
+}
+
+.project-row {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    gap: 80px;
+  padding: 20px;
+}
+
+.project-row.reverse {
+    flex-direction: row-reverse;
+}
+
+/* IMAGE FRAME (NO PADDING ISSUE) */
+.image-container {
+    flex: 1;
+  border: 25px solid #a1836c;
+}
+
+.image-container img {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+}
+
+/* TEXT */
+.text-container {
+    flex: 1;
+    text-align: center;
+}
+
+.text-container h2 {
+    font-size: 70px;
+   color: #d79b8e;
+    margin: 0 0 15px;
+}
+
+.text-container p {
+   color: #a1836c;
+    font-size: 28px;
+    margin: 0;
+}
+
+</style>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+<a href="index.html">
+  <img src="Button.png" alt="Home button of a rabbit with large black glasses" style="width:120px; height:120px">
+</a>
+        <nav>
+            <ul>
+               <li><a href="chinatravel.html">Travel</a></li>
+                <li><a href="watch.html">Watch</a></li>
+                <li><a href="mywork.html">My Work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTENT -->
+    <main class="portfolio-section">
+
+        <div class="project-row">
+            <div class="image-container">
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="500" height="500" src="https://embed.figma.com/proto/vIdZ0qrzE6AWsCH1J2524Y/Magazine?node-id=25-22&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=25%3A82&embed-host=share" allowfullscreen></iframe>            
+          </div>
+            <div class="text-container">
+                <h2>Magazine</h2>
+                <p>
+                    A visually driven magazine inspired by the colors, textures, 
+                    and everyday charm of an Asian grocery store.
+                </p>
+            </div>
+        </div>
+
+        <div class="project-row reverse">
+            <div class="image-container">
+<iframe width="500" height="500" src="https://www.youtube.com/embed/U5VZk9gAcvY?si=D_c6lPydGsYBBTJ9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="text-container ">
+                <h2>Silent Video</h2>
+                <p>
+                    A film capturing the atmosphere of a favorite university coffee spot.
+                </p>
+            </div>
+        </div>
+
+        <div class="project-row">
+            <div class="image-container">
+<iframe width="100%" height="500" scrolling="no" frameborder="no" allow="autoplay"
+        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2285627813&color=%2390a480&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            </div>
+            <div class="text-container ">
+                <h2>Audio<br>Documentary</h2>
+                <p>
+                    An immersive audio documentary exploring the culture, 
+                    preparation, and experience of matcha.
+                </p>
+            </div>
+        </div>
+
+    </main>
+
+
+</body>
+</html>
+
+
+

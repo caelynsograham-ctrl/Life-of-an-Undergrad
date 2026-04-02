@@ -3,58 +3,58 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Work - Portfolio</title>
+    <title>My Work - Blog</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <style>
-      /* --- GLOBAL --- */
-      body {
-        margin: 0;
-        background-color: #ebd5bb;
-        font-family: 'Fredoka', sans-serif;
-        width: 100%;
+     /* --- GLOBAL --- */
+body {
+    margin: 0;
+    background-color: #ebd5bb;
+    font-family: 'Fredoka', sans-serif;
+    width: 100%;
 
-      }
+}
 
-      /* HEADER */
-      header {
-        width: 1400px;
-        margin: 0 auto;
-        background-color: #a1836c;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px 80px;
-      }
+/* HEADER */
+header {
+    width: 1400px;
+    margin: 0 auto;
+    background-color: #a1836c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+}
 
-      header img {
-        height: 80px;
-      }
+header img {
+    height: 80px;
+}
 
-      /* NAV */
-      nav ul {
-        list-style: none;
-        display: flex;
-        gap: 50px;
-        margin: 0;
-        padding: 0;
-      }
+/* NAV */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+}
 
-      nav a {
-        color: #d79b8e;
-        text-decoration: none;
-        font-size: 40px;
-        font-weight: 600;
-      }
-
-      nav li a:hover {
+nav a {
+    color: #d79b8e;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 600;
+}
+  nav li a:hover {
         text-decoration: underline;
       }
 
 
-      /* China function... i think */
-      .hero-slider {
+
+  /* TRIP TITLE SECTION */
+      .trip-title {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -77,7 +77,7 @@
         display: block;
       }
 
-      .hero-text {
+      .title-text {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -88,7 +88,8 @@
         margin: 0;
         letter-spacing: 5px;
       }
-
+      
+      /* ARROW BUTTON FOR NAVIGATING TRAVEL SECTIONS */
       .arrow {
         width: 0;
         height: 0;
@@ -119,7 +120,6 @@
       /* TRAVEL CONTENT GRID */
       .travel-container {
         background-color: #a1836c;
-        /* Brown bottom section */
         padding: 50px 20px;
         display: flex;
         flex-direction: column;
@@ -127,7 +127,7 @@
         gap: 30px;
       }
 
-      .card {
+      .trip {
     background-color: #99b4ae;
     display: flex;
         flex: 1;
@@ -135,11 +135,11 @@
     width: 100%;
 }
 
-.card img {
+.trip img {
    width: 45%;
         object-fit: cover;
 }
-      .card-text {
+      .trip-text {
         width: 50%;
         padding: 20px;
         color: #ebd5bb;
@@ -151,27 +151,27 @@
         text-align: left;
       }
 
-      /* SMALL CARDS ROW */
-      .small-cards-row {
+      /* SMALLER TRIP SECTION */
+      .small-trip-row {
         display: flex;
         gap: 70px;
         max-width: 1400px;
         width: 100%;
       }
 
-      .small-card {
+      .small-trip {
         flex: 1;
         background-color: #99b4ae;
         border: 8px solid #d79b8e;
         display: flex;
       }
 
-      .small-card img {
+      .small-trip img {
         width: 45%;
         object-fit: cover;
       }
 
-      .small-card .card-text {
+      .small-trip .trip-text {
         width: 55%;
         font-size: 16px;
         padding: 10px;
@@ -182,8 +182,9 @@
   <body>
     <!-- HEADER -->
     <header>
-      <img src="Button.png" alt="Logo" style="width:120px; height:120px">
-
+     <a href="index.html">
+  <img src="Button.png" alt="Home button of a rabbit with large black glasses" style="width:120px; height:120px">
+</a>
       <nav>
         <ul>
           <li><a href="chinatravel.html">Travel</a></li>
@@ -194,38 +195,38 @@
     </header>
 
 
-    <section class="hero-slider">
-      <div class="arrow arrow-left"></div>
+    <section class="trip-title">
+      <a href="seatravel.html" class="arrow arrow-left"></a>
       <div class="main-frame">
         <img src="chinaM1775065514.png" alt="Great Wall of China">
-        <h1 class="hero-text">CHINA</h1>
+        <h1 class="title-text">CHINA</h1>
       </div>
-      <div class="arrow arrow-right"></div>
+      <a href="seatravel.html" class="arrow arrow-right"></a>
     </section>
 
     <div class="arrow-down"></div>
 
     <main class="travel-container">
 
-      <div class="card">
+      <div class="trip">
         <img src="greatWall1775065510.png" alt="Walking the Great Wall" style="width:500px; height:520px">
-        <div class="card-text">
-          I studies at BNY for 2 weeks. One of the first things we did was walk the Great Wall of china. My legs were killing me.
+        <div class="trip-text">
+          I studies at Beijing Normal Univerity for 2 weeks to get a certificite in manderin. One of the first things we did was walk the Great Wall of china. My legs were killing me. Overall I was really proud of myself for making it up. I bought an overpriced tea set as a gift for my mom. 
         </div>
       </div>
 
-      <div class="small-cards-row">
-        <div class="small-card">
+      <div class="small-trip-row">
+        <div class="small-trip">
           <img src="me_pretty1775065545.png" alt="Ming Dynasty Hanfu">
-          <div class="card-text">
-            I dressed in a Ming Dynasty hanfu. The owners of the shop were so nice, they made me feel beautiful.
+          <div class="trip-text">
+            I dressed in a Ming Dynasty hanfu. The owners of the shop were so nice, they made me feel beautiful. I was nervous at first but I came prepared with my personal makeup and the people there were very nice. The lady doing my hair took so much time and cair with me and gave me so many hair accesories. SO many people took pictures of/with me that day.
           </div>
         </div>
 
-        <div class="small-card">
+        <div class="small-trip">
           <img src="heavenT1775065546.png" alt="Temple of Heaven">
-          <div class="card-text">
-            The University took us to a lot of temples. This is the Temple of Heaven. I loved every place we went.
+          <div class="trip-text">
+            The University took us to a lot of temples. This is the Temple of Heaven. I loved every place we went.I took so many pictures started to get really close with the other students that I went with. We were able to go to the Lama Temple, and I was able to pray and light insects.
           </div>
         </div>
       </div>
