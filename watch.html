@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Work - Portfolio</title>
+<title>Watch - Portfolio</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
 
@@ -12,24 +12,31 @@
 /* --- GLOBAL --- */
 body {
     margin: 0;
-    background-color: #ebd5bb;
+    background-color: #ebd5bb; /* Tan background */
     font-family: 'Fredoka', sans-serif;
     width: 100%;
-
 }
 
 /* HEADER */
 header {
-    width: 1400px;
-    margin: 0 auto;
-    background-color: #a1836c;
+    background-color: #a1836c; /* Brown header */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 80px;
 }
 
-header img {
+.logo-container {
+    background-color: #c4d3cf; /* Duck logo circle background */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container img {
     height: 80px;
 }
 
@@ -43,17 +50,107 @@ nav ul {
 }
 
 nav a {
-    color: #d79b8e;
-    text-decoration: none;
+    color: #ebd5bb; /* Light text for header links */
+    text-decoration: underline; /* Matches the screenshot's underline style */
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 700;
 }
-  nav li a:hover {
-        text-decoration: underline;
-      }
 
+/* WATCH GRID SECTION */
+.watch-section {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 40px;
+}
 
-  
+.poster-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 40px; /* Space between the frames */
+}
+
+/* POSTER FRAME */
+.poster-frame {
+    background-color: #a1836c; /* Dark brown frame background */
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 4 / 5; /* Keeps all frames the same size */
+}
+
+.poster-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the posters fill the inner space neatly */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* RESPONSIVE (For smaller screens) */
+@media (max-width: 900px) {
+    .poster-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .poster-grid {
+        grid-template-columns: 1fr;
+    }
+    header {
+        flex-direction: column;
+        padding: 20px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="Button.png" alt="Logo">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Travel</a></li>
+                <li><a href="#">Watch</a></li>
+                <li><a href="#">My Work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="watch-section">
+        <div class="poster-grid">
+            
+            <div class="poster-frame">
+                <img src="psych-poster.jpg" alt="Psych">
+            </div>
+
+            <div class="poster-frame">
+                <img src="apothecary-diaries.jpg" alt="The Apothecary Diaries">
+            </div>
+
+            <div class="poster-frame">
+                <img src="sweet-tooth.jpg" alt="Sweet Tooth">
+            </div>
+
+            <div class="poster-frame">
+                <img src="saiki-k.jpg" alt="The Disastrous Life of Saiki K">
+            </div>
+
+            <div class="poster-frame">
+                <img src="evil.jpg" alt="Evil">
+            </div>
+
+            <div class="poster-frame">
+                <img src="frieren.jpg" alt="Frieren: Beyond Journey's End">
+            </div>
+
+        </div>
+    </main>
+
+</body>
 </html>
-
-
