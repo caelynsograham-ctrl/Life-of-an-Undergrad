@@ -1,136 +1,157 @@
 <!DOCTYPE html>
 <html lang="en-CA">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Watch - Blog</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch - Blog</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<style>
+    <style>
+      /* --- GLOBAL --- */
+      body {
+        margin: 0;
+        background-color: #ebd5bb;
+        font-family: 'Fredoka', sans-serif;
+        width: 100%;
 
-/* --- GLOBAL --- */
-body {
-    margin: 0;
-    background-color: #ebd5bb;
-    font-family: 'Fredoka', sans-serif;
-    width: 100%;
+      }
 
-}
+      /* HEADER */
+      header {
+        width: 1400px;
+        margin: 0 auto;
+        background-color: #a1836c;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 80px;
+      }
 
-/* HEADER */
-header {
-    width: 1400px;
-    margin: 0 auto;
-    background-color: #a1836c;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 80px;
-}
+      header img {
+        height: 80px;
+      }
 
-header img {
-    height: 80px;
-}
+      /* NAV */
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 50px;
+        margin: 0;
+        padding: 0;
+      }
 
-/* NAV */
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 50px;
-    margin: 0;
-    padding: 0;
-}
+      nav a {
+        color: #d79b8e;
+        text-decoration: none;
+        font-size: 40px;
+        font-weight: 600;
+      }
 
-nav a {
-    color: #d79b8e;
-    text-decoration: none;
-    font-size: 40px;
-    font-weight: 600;
-}
-    nav li a:hover {
+      nav li a:hover {
         text-decoration: underline;
       }
 
-/* WATCH GRID SECTION */
-.watch-section {
-   width: 1100px;
-    margin: 60px auto;
-    padding: 0 40px;
-}
+      /* WATCH GRID SECTION */
+      .watch-section {
+        width: 1100px;
+        margin: 60px auto;
+        padding: 0 40px;
+      }
 
-.watch-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 40px; 
-}
+      .watch-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 40px;
+      }
 
-/* POSTER FRAME */
-.poster-frame {
-    background-color: #a1836c; 
-    padding: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    aspect-ratio: 4 / 5; 
-}
+      /* POSTER FRAME */
+      .poster-frame {
+        background-color: #a1836c;
+        padding: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-.poster-frame img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+      }
 
-</style>
-</head>
+      .poster-frame img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
 
-<body>
+      .title-text {
+        color: #a1836c;
+        font-size: 140px;
+        font-weight: 700;
+        line-height: 0.9;
+        margin: 0;
+        text-align: center;
+      }
 
-   <body>
-    <!-- HEADER -->
-    <header>
-<a href="index.html">
-  <img src="Button.png" alt="Home button of a rabbit with large black glasses" style="width:120px; height:120px">
-</a>
+      .sub-text {
+        color: #d79b8e;
+        font-size: 28px;
+        font-weight: 600;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        letter-spacing: 2px;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <body>
+      <!-- HEADER -->
+      <header>
+        <a href="index.html">
+          <img src="Button.png" alt="Home button of a rabbit with large black glasses" style="width:120px; height:120px">
+        </a>
         <nav>
-            <ul>
-               <li><a href="chinatravel.html">Travel</a></li>
-                <li><a href="watch.html">Watch</a></li>
-                <li><a href="mywork.html">My Work</a></li>
-            </ul>
+          <ul>
+            <li><a href="chinatravel.html">Travel</a></li>
+            <li><a href="watch.html">Watch</a></li>
+            <li><a href="mywork.html">My Work</a></li>
+          </ul>
         </nav>
-    </header>
+      </header>
 
-    <main class="watch-section">
+      <main class="watch-section">
+        <div class="title-text">
+          SHOW RECOMENDATIONS!
+        </div>
+        <div class="sub-text"> ~THESE SHOWS HAVE BEEN HELPING ME THROUGH UNIVERSIT~! </div>
         <div class="watch-grid">
-            
-            <div class="poster-frame">
-                <img src="psych1775143252.png" alt="Psych">
-            </div>
 
-            <div class="poster-frame">
-                <img src="apothecary diaries1775143249.png" alt="The Apothecary Diaries">
-            </div>
+          <div class="poster-frame">
+            <img src="psych1775143252.png" alt="Psych">
+          </div>
 
-            <div class="poster-frame">
-                <img src="sweet tooth1775143254.png" alt="Sweet Tooth">
-            </div>
+          <div class="poster-frame">
+            <img src="apothecary diaries1775143249.png" alt="The Apothecary Diaries">
+          </div>
 
-            <div class="poster-frame">
-                <img src="saikiK.1775143252.png" alt="The Disastrous Life of Saiki K">
-            </div>
+          <div class="poster-frame">
+            <img src="sweet tooth1775143254.png" alt="Sweet Tooth">
+          </div>
 
-            <div class="poster-frame">
-                <img src="evil1775143251.png" alt="Evil">
-            </div>
+          <div class="poster-frame">
+            <img src="saikiK.1775143252.png" alt="The Disastrous Life of Saiki K">
+          </div>
 
-            <div class="poster-frame">
-                <img src="frieren1775143252.png" alt="Frieren: Beyond Journey's End">
-            </div>
+          <div class="poster-frame">
+            <img src="evil1775143251.png" alt="Evil">
+          </div>
+
+          <div class="poster-frame">
+            <img src="frieren1775143252.png" alt="Frieren: Beyond Journey's End">
+          </div>
 
         </div>
-    </main>
+      </main>
 
-</body>
+    </body>
 </html>
-
