@@ -1,142 +1,162 @@
 <!DOCTYPE html>
 <html lang="en-CA">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Work - Blog</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Work - Blog</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<style>
+    <style>
+      /* --- GLOBAL --- */
+      body {
+        margin: 0;
+        background-color: #ebd5bb;
+        font-family: 'Fredoka', sans-serif;
+        width: 100%;
+      }
 
-/* --- GLOBAL --- */
-body {
-    margin: 0;
-    background-color: #ebd5bb;
-    font-family: 'Fredoka', sans-serif;
-    width: 100%;
-}
+      /* HEADER */
+      header {
+        width: 1400px;
+        margin: 0 auto;
+        background-color: #a1836c;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 80px;
+      }
 
-/* HEADER */
-header {
-    width: 1400px;
-    margin: 0 auto;
-    background-color: #a1836c;
+      header img {
+        height: 80px;
+      }
+
+      /* NAV */
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 50px;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav a {
+        color: #d79b8e;
+        text-decoration: none;
+        font-size: 40px;
+        font-weight: 600;
+      }
+
+      nav li a:hover {
+        text-decoration: underline;
+      }
+
+      /* MAIN SECTION */
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+        gap: 80px;
+        width: 1400px;
+        margin: 0 auto;
+      }
+
+      /* TEXT BLOCK */
+      .text-block {
+        display: fixed;
+        flex-direction: column;
+        align-items: center;
+        width: 600px;
+      }
+
+      .title-text {
+        color: #a1836c;
+        font-size: 140px;
+        font-weight: 700;
+        line-height: 0.9;
+        margin: 0;
+        text-align: center;
+      }
+
+      .sub-text {
+        color: #d79b8e;
+        font-size: 40px;
+        font-weight: 1000;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        letter-spacing: 2px;
+        text-align: center;
+      }
+
+      /* IMAGE */
+      .me-picture img {
+        width: 620px;
+        height: 620px;
+        object-fit: cover;
+      }
+
+      /* MAILTO BUTTON */
+      .mailto-button {
+        padding: 15px 30px;
+        background-color: #a1836c;
+        color: #ebd5bb;
+        font-size: 24px;
+        font-weight: 600;
+        text-decoration: none;
+        text-align: center;
+      }
+
+      .mailto-button:hover {
+        background-color: #8c6f54;
+      }
+      .sub-block {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 80px;
-}
-
-header img {
-    height: 80px;
-}
-
-/* NAV */
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 50px;
-    margin: 0;
-    padding: 0;
-}
-
-nav a {
-    color: #d79b8e;
-    text-decoration: none;
-    font-size: 40px;
-    font-weight: 600;
-}
-
-nav li a:hover {
-    text-decoration: underline;
-}
-
-/* MAIN SECTION */
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-    gap: 80px;
-    width: 1400px;
-    margin: 0 auto;
-}
-
-/* TEXT BLOCK */
-.text-block {
-    display: fixed;
     flex-direction: column;
-    align-items: center;
-    width: 600px;
+    align-items: center; /* centers everything horizontally */
 }
+    </style>
+  </head>
 
-.title-text {
-    color: #a1836c;
-    font-size: 140px;
-    font-weight: 700;
-    line-height: 0.9;
-    margin: 0;
-    text-align: center;
-}
+  <body>
 
-.sub-text {
-    color: #d79b8e;
-    font-size: 40px;
-    font-weight: 1000;
-    margin-top: 0px;
-  margin-bottom: 10px;
-    letter-spacing: 2px;
-  text-align: center;
-}
-
-/* IMAGE */
-.me-picture img {
-    width: 620px;
-    height: 620px;
-    object-fit: cover;
-}
-
-</style>
-</head>
-
-<body>
-
-<header>
-    <a href="index.html">
+    <header>
+      <a href="index.html">
         <img src="Button.png" alt="Home button" style="width:120px; height:120px">
-    </a>
+      </a>
 
-    <nav>
+      <nav>
         <ul>
-            <li><a href="chinatravel.html">Travel</a></li>
-            <li><a href="watch.html">Watch</a></li>
-            <li><a href="mywork.html">My Work</a></li>
+          <li><a href="chinatravel.html">Travel</a></li>
+          <li><a href="watch.html">Watch</a></li>
+          <li><a href="mywork.html">My Work</a></li>
         </ul>
-    </nav>
-</header>
+      </nav>
+    </header>
 
-<main class="container">
-    
-    <div class="sub-block">
+    <main class="container">
+
+      <div class="sub-block">
         <h2 class="sub-text">
           HI! <br> I'M CAELYN AND THIS IS
         </h2>
 
         <h1 class="title-text">
-            Life of an<br>Undergrad
+          Life of an<br>Undergrad
         </h1>
 
-        <h3 class="sub-text">
-           <br> ~ A STUDENT RUN BLOG ~
-        </h3>
-    </div>
+        <h2 class="sub-text">
+          <br> ~ A STUDENT RUN BLOG ~
+        </h2>
+           <a href="mailto:c32graha@uwaterloo.ca" class="mailto-button">Email Me</a>
 
-    <div class="me-picture">
+      </div>
+
+      <div class="me-picture">
         <img src="IMG_6173.png" alt="Picture of back girl with cury black hair and blonde bangs">
-    </div>
+      </div>
 
-</main>
+    </main>
 
-</body>
+  </body>
 </html>
